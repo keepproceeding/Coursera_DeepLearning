@@ -12,7 +12,8 @@
 
  활성함수를 결정할 때 한가지 규칙이 있는데, 바로 **이진 분류 문제에서 출력 값이 0과 1일 때에는 시그모이드 활성 함수가 적절한 선택이라는 것과, 다른 층에서는 RELU가 활성함수를 선택하는 보편적인 기준이 될 것이라는 점이다.** RELU의 한가지 단점은 0 이하에서 미분 값이 0이 된다는 것이다. 이를 보완하기 위하여 **leaky RELU**라는 활성함수를 사용하게 된다. RELU와 leaky RELU의 장점은 z의 많은 영역에서의 활성함수의 미분 값이 0과 매우 다른값을 갖게 해준다는 것이다. 이들은 학습을 더욱 빠르게 할 수 있도록 도와준다. z값의 절반은 0이므로 미분 값 또한 0에 가깝지만. 실제로는 은닉층 유닛들의 z 값이 0보다는 충분히 클 것이므로 걱정할 필요가 없다.
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62889224/107953700-cdbbec80-6fde-11eb-8b11-f2502f5c48a0.png)
+
 
 ## Why do you need non-linear activation functions?
 
@@ -20,32 +21,32 @@
 
 ## Derivatives of activation functions
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%201.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/62889224/107953679-c8f73880-6fde-11eb-9b5d-7936667746fb.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%202.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/62889224/107953681-ca286580-6fde-11eb-80d4-7d9ce5e1a071.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%203.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/62889224/107953685-ca286580-6fde-11eb-8106-ebc19f4ecdc0.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%204.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/62889224/107953686-cac0fc00-6fde-11eb-8135-7606c72f88a0.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%205.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/62889224/107953688-cb599280-6fde-11eb-8a64-2d3cb3ffa845.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%206.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/62889224/107953689-cb599280-6fde-11eb-82b6-042c0cfbb5c9.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%207.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%207.png)
+![Untitled 7](https://user-images.githubusercontent.com/62889224/107953690-cbf22900-6fde-11eb-80ba-437062eef327.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%208.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%208.png)
+![Untitled 8](https://user-images.githubusercontent.com/62889224/107953693-cbf22900-6fde-11eb-812e-c9868205f609.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%209.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%209.png)
-
+![Untitled 9](https://user-images.githubusercontent.com/62889224/107953694-cc8abf80-6fde-11eb-985c-a3c406cf2cf1.png)
 ## Gradient descent for Neural Networks
 
 ## Formulas for computing drivatives
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2010.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2010.png)
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2011.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2011.png)
+![Untitled 10](https://user-images.githubusercontent.com/62889224/107953697-cd235600-6fde-11eb-912a-f3c8e8962b47.png)
+
+![Untitled 11](https://user-images.githubusercontent.com/62889224/107953698-cd235600-6fde-11eb-90b0-cf8852c79e4c.png)
 
 ## Random Initialization - 초기화가 중요한 이유
 
-![3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2012.png](3%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%205d06a15045924738926b1cdead7ec64c/Untitled%2012.png)
+![Untitled 12](https://user-images.githubusercontent.com/62889224/107953699-cdbbec80-6fde-11eb-891b-9afcba94ca6a.png)
